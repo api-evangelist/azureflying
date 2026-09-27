@@ -1,23 +1,60 @@
 aid: azureflying
+
 name: Azureflying
-description: 'Azureflying is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Azureflying (蔚复来) is a Zhejiang‑based technology company that leverages AI and digital solutions for green waste recycling, smart city infrastructure, and sustainable resource management. It offers AI‑enabled waste classification hardware, end‑to‑end waste processing services, and digital platforms that enable traceability, data analytics, and carbon‑neutral operations for municipalities and enterprises. The firm reports over 200 patents, operates across 200 cities, and focuses on turning waste into valuable resources through AI‑driven processes.'
+
 url: https://raw.githubusercontent.com/api-evangelist/azureflying/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- AI
+- Waste Management
+- Green Technology
+- Smart Cities
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/azureflying-hosts.yml
+- type: Newsroom
+  url: https://azureflying.com/news
+- type: DomainSecurity
+  url: security/azureflying-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/azureflying
+  url: https://azureflying.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: "API host https://api.azureflying.com returned no OpenAPI spec and no documentation was found."
+  evidence:
+    - url: https://api.azureflying.com/openapi.json
+      status: 000
+  checked: 2026-09-27
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
