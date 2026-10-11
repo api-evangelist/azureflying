@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "azureflying",
+    "captured_at": "2026-10-11T181959",
+    "source_url": "https://azureflying.com",
+    "source_type": "Website",
+    "file": "azureflying-2026-10-11T181959.png",
+    "bytes": 255020,
+    "capture": "playwright-local"
+  }
+]
